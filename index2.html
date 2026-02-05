@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<title>Tartumaa Ehitusmehed OÜ | Ehitustööd Tartus ja Tartumaal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Tartumaa Ehitusmehed OÜ on usaldusväärne ehitusfirma Tartus ja Tartumaal. Ehitustööd, remont, viimistlus, fassaadid ja katused. Tutvu meie tehtud tööde ja kogemusega.">
+<meta name="keywords" content="ehitustööd Tartu, ehitusfirma Tartumaa, remont Tartu, viimistlustööd, fassaaditööd">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#1f3a5f;
+  --accent:#f59e0b;
+  --light:#f4f6f9;
+  --white:#ffffff;
+  --dark:#2b2b2b;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:var(--light);
+  color:var(--dark);
+  line-height:1.9;
+}
+
+header{
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+nav{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav strong{
+  font-size:22px;
+  color:var(--primary);
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:var(--primary);
+  font-weight:600;
+}
+
+.hero{
+  background:
+    linear-gradient(rgba(31,58,95,.9),rgba(31,58,95,.9)),
+    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:150px 20px;
+}
+
+.hero h1{font-size:52px;margin-bottom:25px}
+.hero p{font-size:22px;max-width:1000px;margin:auto}
+
+.btn{
+  display:inline-block;
+  margin-top:45px;
+  background:var(--accent);
+  color:black;
+  padding:18px 48px;
+  border-radius:40px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.section{padding:110px 20px}
+.section.white{background:var(--white)}
+.section.light{background:var(--light)}
+.section.primary{background:var(--primary);color:white}
+
+.container{max-width:1200px;margin:auto}
+
+h2{
+  font-size:40px;
+  margin-bottom:40px;
+  color:var(--primary);
+  text-align:center;
+}
+.section.primary h2{color:white}
+
+.two-col{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:70px;
+  align-items:start;
+}
+
+.highlight{
+  background:var(--light);
+  padding:35px;
+  border-radius:18px;
+  border-left:6px solid var(--accent);
+}
+
+.cards, .work-grid, .testimonials{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.card, .box{
+  background:white;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.work-item{
+  position:relative;
+  overflow:hidden;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.work-item img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  transition:transform .6s ease;
+}
+
+.work-item:hover img{transform:scale(1.1)}
+
+.work-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,.1));
+  color:white;
+  display:flex;
+  align-items:flex-end;
+  padding:25px;
+}
+
+.quote{font-style:italic}
+
+form{max-width:600px;margin:auto}
+
+input,textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:14px;
+  border:none;
+  border-radius:8px;
+  font-family:'Poppins',sans-serif;
+}
+
+button{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:40px;
+  background:var(--accent);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.map{
+  margin-top:50px;
+  border-radius:18px;
+  overflow:hidden;
+}
+
+footer{
+  background:#0f1e33;
+  color:#ccc;
+  text-align:center;
+  padding:40px;
+}
+
+@media(max-width:900px){
+  .two-col{grid-template-columns:1fr}
+  .hero h1{font-size:36px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<strong>Tartumaa Ehitusmehed OÜ</strong>
+<div>
+<a href="#meist">Kes me oleme</a>
+<a href="#teenused">Teenused</a>
+<a href="#tood">Tehtud tööd</a>
+<a href="#kontakt">Kontakt</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Ehitustööd Tartus ja Tartumaal</h1>
+<p>
+Tartumaa Ehitusmehed OÜ on kogenud ja usaldusväärne ehitusfirma, mis pakub
+kvaliteetseid ehitus-, remondi- ja viimistlustöid nii era- kui äriklientidele.
+</p>
+<a href="#kontakt" class="btn">Küsi tasuta hinnapakkumist</a>
+</section>
+
+<!-- KES ME OLEME -->
+<section id="meist" class="section white">
+<div class="container two-col">
+<div>
+<h2>Kes me oleme</h2>
+
+<p>
+Tartumaa Ehitusmehed OÜ on Tartumaal tegutsev ehitusettevõte, mille taga on
+päris inimesed, päris kogemus ja päris vastutus.
+Me ei ole vahendajad ega juhuslikud alltöövõtjad – me oleme meeskond,
+kes teeb tööd algusest lõpuni ise ja seisab oma tehtud töö kvaliteedi eest.
+</p>
+
+<p>
+Aastate jooksul oleme teostanud erinevaid ehitus- ja remonditöid:
+eramajad, korterid, fassaadid, katused ja siseviimistlus.
+Iga projekt on õpetanud midagi uut ja aidanud meil muutuda veelgi paremaks.
+</p>
+
+<p>
+Meie eesmärk ei ole teha võimalikult kiiresti, vaid teha **korralikult**.
+Usume, et hea ehitustöö peab kestma aastaid ning klient peab tundma,
+et ta tegi õige valiku.
+</p>
+</div>
+
+<div class="highlight">
+<p><strong>Meie põhimõtted:</strong></p>
+<ul>
+<li>✔️ aus ja läbipaistev hinnastamine</li>
+<li>✔️ kokkulepetest kinnipidamine</li>
+<li>✔️ korrektne ja puhas tööobjekt</li>
+<li>✔️ selge suhtlus kogu projekti vältel</li>
+<li>✔️ töödele antav garantii</li>
+</ul>
+
+<p>
+Tegutseme peamiselt Tartus ja Tartumaal, mis võimaldab meil olla paindlikud,
+kiired ja alati kliendile lähedal.
+</p>
+</div>
+</div>
+</section>
+
+<section id="teenused" class="section light">
+<div class="container">
+<h2>Meie teenused</h2>
+<div class="cards">
+<div class="card">Majaehitus ja vundamendid</div>
+<div class="card">Remont ja renoveerimine</div>
+<div class="card">Viimistlustööd</div>
+<div class="card">Fassaadid ja soojustamine</div>
+<div class="card">Katuseehitus ja remont</div>
+<div class="card">Betoon- ja plaatimistööd</div>
+</div>
+</div>
+</section>
+
+<section id="tood" class="section white">
+<div class="container">
+<h2>Meie tehtud tööd</h2>
+<div class="work-grid">
+<div class="work-item">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<div class="work-overlay"><h3>Eramaja ehitus</h3></div>
+</div>
+<div class="work-item">
+<img src="https://images.unsplash.com/photo-1597047084897-51e81819a499">
+<div class="work-overlay"><h3>Renoveerimistööd</h3></div>
+</div>
+<div class="work-item">
+<img src="https://images.unsplash.com/photo-1581091215367-59ab6c6c6a54">
+<div class="work-overlay"><h3>Siseviimistlus</h3></div>
+</div>
+<div class="work-item">
+<img src="https://images.unsplash.com/photo-1605146768851-eda79da39897">
+<div class="work-overlay"><h3>Fassaaditööd</h3></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="kontakt" class="section primary">
+<div class="container">
+<h2>Võta meiega ühendust</h2>
+
+<form action="mailto:info@tartumaaehitusmehed.ee" method="post" enctype="text/plain">
+<input type="text" name="Nimi" placeholder="Nimi" required>
+<input type="email" name="Email" placeholder="E-post" required>
+<input type="tel" name="Telefon" placeholder="Telefon">
+<textarea name="Projekt" rows="5" placeholder="Kirjelda oma projekti võimalikult täpselt"></textarea>
+<button>Saada päring</button>
+</form>
+
+<div class="map">
+<iframe src="https://www.google.com/maps?q=Tartu&output=embed" width="100%" height="330" style="border:0"></iframe>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Tartumaa Ehitusmehed OÜ • Ehitustööd Tartus ja Tartumaal
+</footer>
+
+</body>
+</html>
+
+
